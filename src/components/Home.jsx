@@ -8,7 +8,7 @@ import './styles.css';
 const Home = () => {
 
     const { state: { products } } = CartState();
-    console.log(products);
+    // console.table(products);
 
 
     return (
