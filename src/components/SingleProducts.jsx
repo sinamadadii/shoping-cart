@@ -11,8 +11,11 @@ const SingleProducts = ({ product }) => {
     } = CartState();
     return (
         <div className='products'>
-            <Card>
-                <Card.Img variant="top" src={product.image} alt={product.name} />
+            <Card style={{ borderRadius: 20 }}>
+                <Card.Img variant="top" src={product.image} alt={product.name} style={{
+                    borderTopLeftRadius: 20,
+                    borderTopRightRadius: 20
+                }} />
                 <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Subtitle style={{ paddingBottom: 10 }}>

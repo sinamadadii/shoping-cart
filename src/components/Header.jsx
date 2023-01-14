@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Dropdown, FormControl, Nav, Navbar, NavbarBrand, Badge, Button } from 'react-bootstrap';
+import { Container, Dropdown, FormControl, Nav, Navbar, NavbarBrand, Badge, Button, NavLink } from 'react-bootstrap';
 import { AiFillDelete } from 'react-icons/ai';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -13,9 +13,9 @@ const Header = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Nav>
-                    <Dropdown align="right" >
-                        <Dropdown.Toggle variant="success">
+                <Nav >
+                    <Dropdown align="right"  >
+                        <Dropdown.Toggle variant="success" >
                             <FaShoppingCart color="white" fontSize="23px" />
                             <Badge bg='success'>{cart.length}</Badge>
                         </Dropdown.Toggle>
@@ -61,13 +61,13 @@ const Header = () => {
                     </Dropdown>
                 </Nav>
                 <Navbar.Text className='search'>
-                    <FormControl style={{ width: 500 }}
+                    <FormControl style={{ width: 500, borderRadius: 20 }}
                         placeholder='search'
                         className='m-auto'
                     />
                 </Navbar.Text>
                 <NavbarBrand>
-                    <Link >Shoping Cart</Link>
+                    <Link to='/'>Shoping Cart</Link>
 
                 </NavbarBrand>
             </Container>

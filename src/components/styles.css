@@ -11,13 +11,14 @@
 
   .filters {
     background-color: #343a40;
-    color: white;
+    color: #007bff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     width: 20%;
     margin: 10px;
     height: 86vh;
+    border-radius: 20px;
   }
   .filters > span {
     padding-bottom: 20px;
@@ -29,6 +30,7 @@
   width: 30%;
   margin: 10px;
 }
+
 .cartitem {
   display: flex;
   justify-content: space-between;
